@@ -8,5 +8,6 @@ namespace RFPDAY_14_DATASTRUCTURE_ASSIGNMENT
 {
     internal class LinkedList
     {
+
     }
 }
