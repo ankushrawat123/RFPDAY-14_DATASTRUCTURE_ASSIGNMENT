@@ -8,6 +8,9 @@ namespace RFPDAY_14_DATASTRUCTURE_ASSIGNMENT
 {
     internal class Nodes
     {
+        //* 1. Allocate the Node &
+        // 2. Put in the data
+        // 3. Set next as null */
         public int data;
         public Nodes next;
         public Nodes(int data)
