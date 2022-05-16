@@ -18,5 +18,6 @@ namespace RFPDAY_14_DATASTRUCTURE_ASSIGNMENT
             this.data = data;
             this.next = null;
         }
+
     }
 }
