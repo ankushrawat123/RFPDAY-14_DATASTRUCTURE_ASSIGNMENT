@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using RFPDAY_14_DATASTRUCTURE_ASSIGNMENT;
 Console.WriteLine("WELCOME TO LINKED LIST PROGRAM!\n");
-Console.WriteLine("Enter \n1 for SIMPLE LINKED LIST PROGRAM \n2 for Ability TO CREATE LINKED LIST AND ADDING NEW NODES IN FRONT PROGRAM \n3 to CREATE LINKED LIST AND ADD NEW NODES IN END \n4 to CREATE LINKED LIST AND ADD NEW NODES AFTER CERTAIN NODE\n5 to DELETE 1ST NODE IN LINKED LIST\n");
+Console.WriteLine("Enter \n1 for SIMPLE LINKED LIST PROGRAM \n2 for Ability TO CREATE LINKED LIST AND ADDING NEW NODES IN FRONT PROGRAM \n3 to CREATE LINKED LIST AND ADD NEW NODES IN END \n4 to CREATE LINKED LIST AND ADD NEW NODES AFTER CERTAIN NODE\n5 to DELETE 1ST NODE IN LINKED LIST \n6 to DELETE LAST NODE IN LINKED LIST\n");
 int num = Convert.ToInt32(Console.ReadLine());
 switch (num) 
 {
@@ -48,4 +48,16 @@ switch (num)
         Console.WriteLine("\nAfter deleting First Node");
         Del1stNode.Display();
  break;
+
+ case 6:
+        DeleteLastNode DelLastNode = new DeleteLastNode();
+        DelLastNode.Add(56);
+        DelLastNode.Add(30);
+        DelLastNode.Add(70);
+        Console.WriteLine("\nBefore deleting Last Node");
+        DelLastNode.Display();
+        DelLastNode.RemovaLastNode();
+        Console.WriteLine("\nAfter deleting Last Node");
+        DelLastNode.Display();
+        break;
 }
